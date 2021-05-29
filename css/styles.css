@@ -344,7 +344,7 @@ img {
 }
 
 .footer-form {
-  margin-left: 93px;
+  margin-left: auto;
 }
 
 .page-footer .logo,
@@ -756,6 +756,10 @@ address {
   color: var(--title-text-color);
 }
 
+.form-field {
+  margin-bottom: 10px;
+}
+
 .form-field label,
 .form-field-textarea::placeholder {
   font-size: 12px;
@@ -772,7 +776,6 @@ address {
 }
 
 .form-field input {
-  margin-bottom: 10px;
   height: 40px;
   width: 100%;
   padding: 12px 42px;
@@ -848,8 +851,12 @@ address {
   border-radius: 2px;
   fill: transparent;
 
-  transition: border-color 250px cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250px cubic-bezier(0.4, 0, 0.2, 1), fill 250px cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.checkbox:focus ~ .checkbox-icon-thumb {
+  border-color: var(--accent-color);
 }
 
 .checkbox-icon {
